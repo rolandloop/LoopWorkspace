@@ -1,19 +1,3 @@
-# ---------------------------------------------------------------------------
-# LOKALE AENDERUNG (rolandloop) - NICHT ENTFERNEN
-#
-# GitHub deaktiviert in Forks geplante Workflows, deren Datei UNVERAENDERT vom
-# Upstream stammt. Gemessen am 25.07.2026 geschah das alle 40 Minuten erneut:
-#   11:30:19 / 12:10:17 / 12:50:18 UTC (Abstand 39:58 und 40:01)
-# Eine lokal geaenderte Workflow-Datei bleibt dagegen aktiv - create_certs.yml
-# hat so 8 Stunden ohne Deaktivierung ueberlebt, waehrend diese Datei
-# unveraendert war und dreimal abgeschaltet wurde.
-#
-# DIESER KOMMENTAR IST DIE LOKALE AENDERUNG. Wird er entfernt, gilt die Datei
-# wieder als unveraendert, der Wochen-Cron unten feuert nie, und der
-# TestFlight-Build verfaellt nach 90 Tagen - ohne Fehlermeldung irgendwo.
-# Siehe auch: github.com/orgs/community/discussions/181236 (gleiches Problem
-# bei anderen LoopWorkspace-Forks, keine offizielle GitHub-Antwort).
-# ---------------------------------------------------------------------------
 name: 4. Build Loop
 run-name: Build Loop (${{ github.ref_name }})
 on:
